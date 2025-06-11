@@ -18,6 +18,8 @@ struct ContentView: View {
             Button("Click Me!") {
                 
             }
+            
+            Text("New Text")
         }
         .padding()
     }
