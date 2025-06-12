@@ -10,30 +10,21 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack(alignment: .topLeading) {
-            VStack {
+            VStack(spacing: 60) {
                 HStack {
                     Text("Cancel")
                     Spacer()
                     Image(systemName: "xmark")
                 }
                 Image(systemName: "heart.fill")
+                    .resizable()
+                    .scaledToFit()
+                    .padding(.top, 120)
                     .imageScale(.large)
                     .foregroundStyle(.tint)
-                Text("Testing Git")
-                
-                Button("Click Me!") {
-                    
-                }
-                Text("And here is more")
-                
-                
-                Text("New Text")
-                
-                Text("And Yet More")
             }
             .frame(maxHeight: .infinity, alignment: .topLeading)
             .padding()
-        
         }
         
     }
