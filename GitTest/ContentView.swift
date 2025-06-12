@@ -9,30 +9,33 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            HStack {
-                Text("Cancel")
-                Spacer()
-                Image(systemName: "xmark")
-            }
-            Spacer()
-            Image(systemName: "heart.fill")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Testing Git")
-            
-            Button("Click Me!") {
+        ZStack(alignment: .topLeading) {
+            VStack {
+                HStack {
+                    Text("Cancel")
+                    Spacer()
+                    Image(systemName: "xmark")
+                }
+                Image(systemName: "heart.fill")
+                    .imageScale(.large)
+                    .foregroundStyle(.tint)
+                Text("Testing Git")
                 
+                Button("Click Me!") {
+                    
+                }
+                Text("And here is more")
+                
+                
+                Text("New Text")
+                
+                Text("And Yet More")
             }
-            
-            Text("And here is more")
-            
-            
-            Text("New Text")
-            
-            Text("And Yet More")
+            .frame(maxHeight: .infinity, alignment: .topLeading)
+            .padding()
+        
         }
-        .padding()
+        
     }
 }
 
