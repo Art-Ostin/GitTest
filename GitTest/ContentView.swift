@@ -10,6 +10,12 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
+            HStack {
+                Text("Cancel")
+                Spacer()
+                Image(systemName: "xmark")
+            }
+            Spacer()
             Image(systemName: "heart.fill")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
